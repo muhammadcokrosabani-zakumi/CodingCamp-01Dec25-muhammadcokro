@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Global Itech | Perusahaan Elektronik Indonesia</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="asset/logo.png" alt="Global Itech" class="logo">
+        </div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#profile">Our Profile</a>
+            <a href="#headquarter">Our Partner</a>
+            <a href="#message-us" class="btn-contact">Message Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <h1 id="welcome-message">Hi [Name], Welcome To Website</h1>
+            <h2>Tempat Karya Anak Bangsa</h2>
+            <div class="slider-container">
+    <div class="slider-wrapper">
+        <img src="asset/advan.jpeg" alt="Smartphone Terbaru" class="slider-image active">
+        <img src="asset/zyrex.jpeg" alt="Laptop Performa Tinggi" class="slider-image">
+        <img src="asset/axioo.jpeg" alt="Tablet Multifungsi" class="slider-image">
+    </div>
+    
+    <div class="slider-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+    </div>
+</div>
+        </section>
+       
+        <section id="headquarter" class="hq-section">
+            <h2>Our Partner</h2>
+            <div class="hq-container">
+                <div class="hq-location">
+                    <div class="hq-circle" id="Advan"></div>
+                    <img src="asset/Ladvan.png" alt="Advan">
+                    <p>Advan</p>
+                </div>
+                <div class="hq-location">
+                    <div class="hq-circle" id="Axioo"></div>
+                    <img src="asset/Laxioo.png" alt="Axioo">
+                    <p>Axioo</p>
+                </div>
+                <div class="hq-location">
+                    <div class="hq-circle" id="Zyrex"></div>
+                    <img src="asset/Lzyrexx.png" alt="Zyrex">
+                    <p>Zyrex</p>
+                </div>
+            </div>
+        </section>
+ <section id="profile" class="profile-section">
+            <h2>Our Profile</h2>
+            <p>Global Itech adalah perusahaan elektronik terkemuka di Indonesia yang berdedikasi untuk menyediakan produk berkualitas tinggi dan inovatif. Dengan pengalaman bertahun-tahun di industri ini, kami berkomitmen untuk memenuhi kebutuhan teknologi konsumen modern.</p>
+            <ul class="profile-list">
+                <li><b>Visi:</b> Menjadi pemimpin pasar dalam solusi elektronik di Asia Tenggara.</li>
+                <li><b>Misi:</b> Menghadirkan produk inovatif yang meningkatkan kualitas hidup pelanggan kami.</li>
+                <li><b>Nilai-Nilai:</b> Inovasi, Kualitas, Keberlanjutan, dan Kepuasan Pelanggan.</li>
+            </ul>
+        </section>
+        <section id="message-us" class="message-us-section">
+            <div class="form-container">
+                <form id="contact-form" class="message-form">
+                    <h2>Message Us</h2>
+
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+
+                    <label for="dob">Tanggal Lahir:</label>
+                    <input type="date" id="dob" name="dob">
+
+                    <fieldset>
+                        <legend>Jenis Kelamin:</legend>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="Laki-Laki" checked>
+                            <label for="male">Laki-Laki</label>
+
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Perempuan</label>
+                        </div>
+                    </fieldset>
+
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Ketik pesan Anda di sini..." required></textarea>
+
+                    <button type="submit" class="btn-submit">Submit</button>
+                    <p id="form-error" class="error-message"></p>
+                </form>
+
+                <div class="output-display">
+                    <h3 id="output-title">Current Time: <span id="current-time"></span></h3>
+                    <div id="form-output-data">
+                        <p>Data yang dikirimkan akan muncul di sini.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Created By MCS | &copy; 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
